@@ -1,5 +1,87 @@
 ## Release History
 
+ * **v2.9.3** - 2018-04-24
+   - hotfix to skipping and exiting the intro
+
+ * **v2.9.2** - 2018-04-24
+   - hotfix to add any minified files that might have been dependencies to the npm package
+
+ * **v2.9.1** - 2018-04-24
+   - hotfix to removing events from removed DOM elements
+
+ * **v2.9.0** - 2018-04-23
+   - Added @bozdoz as Author
+   - Fixed scroll positions when parent element is scrollable 
+   - Added DOM Event helper function and _stamp to uniquely identify objects and intro instances; fixes issues with removing event listeners
+   - Added new syntax for radial gradients
+   - Fixes to CSP violations to avoid using `setAttribute`
+   - Fix to intro groups from PR #80 (also PR #763)
+   - optional `buttonClass` option to overwrite 'introjs-button'
+   - Added `onskip` callback
+
+ * **v2.9.0-alpha.1** - 2017-12-02
+   - Supporting scroll option `off`
+   - Improved accuracy of tooltip positions
+   - Improved auto position
+   - Changed HTML attributes to lowercase
+   - Improved coding style
+   - Many bug fixes
+
+ * **v2.8.0-alpha.1** - 2017-08-30
+   - Enabling `onbeforechange` to return bool and prevent the next step to display
+   - Updating disable interaction layer after window resize
+   - Fixing disable interaction layer z-index issue
+
+ * **v2.7.0** - 2017-08-17
+   - Added `onbeforeexit` callback
+   - Added `force` parameter to `exit()`
+   - Added Code of Conduct and Contributing guide files
+
+ * **v2.6.0** - 2017-07-29
+   - Per step disable interaction
+   - Adding `scrollTo` option 
+   - Better scrolling method
+   - Fixing pulse animation issue on IE
+   - Adding a new method to show the popup of specific hint
+   - Fixing build script
+   - Some minor bug fixes
+
+ * **v2.5.0** - 2017-03-22
+   - SVG support
+   - Adding new function: `goToStepNumber`, `removeHint`, `removeHits`
+   - Adding new positions for hints
+   - Adding library to Yarn
+   - Fixing documentation
+   - and many minor bug fixes + refactoring
+
+ * **v2.4.0** - 2016-12-11
+   - New documentation
+   - New template: Modern
+   - Added showHint and showHints
+   - Added Dart and R wrappers
+   - Minor bug fixes and coding style issues
+
+ * **v2.3.0** - 2016-07-01
+   - Fixing the conflict with Bootstrap 3
+   - Adding two new options to hide next and previous button in first and last steps
+   - Add web components compatibility (polymer)
+   - Removing `position: absolute` from parent fix class
+   - Fixing typo in hint pulse class
+   - Adding a Bootstrap 3 example + different positions example
+   - and some minor bug fixes.
+
+ * **v2.1.0** - 2016-04-20
+   - Removed javascript:void hrefs in order to support CSP
+   - Add hideHint function to public api
+   - Add re-align hints to refresh function + skip hidden elements for intro
+   - Added a check for ghost elements
+   - Remove `introjs-fixedTooltip` if not needed
+   - Removed any leftover introjs-fixedTooltip class
+   - CSS - Make filter a string
+   - Add new template 'flattener'
+   - Updating documentation + adding Emberjs
+   - and some minor bug fixes.
+
  * **v2.0.0** - 2015-12-21
    - Adding `hint` feature
    - Updating templates
